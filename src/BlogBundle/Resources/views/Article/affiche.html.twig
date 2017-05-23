@@ -1,0 +1,12 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}BlogBundle:Article:affiche{% endblock %}
+
+{% block body %}
+<h1>Voici l'article demandé</h1>
+<div>
+	<h2>{{article.titre}}</h2>
+	<p>{{article.contenu}}</p>
+	<p>La date de création : {{article.dateCreation|date('Y-m-d H:i:s')}}</p>
+</div>
+{% endblock %}
